@@ -23,6 +23,11 @@ docker compose up --build
 - Email `admin@example.com`
 - Password `admin`
 
+> [!IMPORTANT]
+> Al añadir una conexión se tiene que ver así:
+
+<img src="./Servidor.png">
+
 ## Odoo
 
 > [!IMPORTANT]
