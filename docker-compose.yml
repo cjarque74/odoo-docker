@@ -12,8 +12,8 @@ services:
       - ./addons:/mnt/extra-addons
     environment:
       - HOST=db
-      - USER=odoo
-      - PASSWORD=password
+      - USER=openpg
+      - PASSWORD=openpgpwd
     networks:
       - odoo-network
     restart: unless-stopped
