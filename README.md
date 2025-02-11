@@ -41,12 +41,11 @@ docker compose up --build
 > [!IMPORTANT] 
 > NO SELECCIONAR DEMO DATA
 
-Hay que instalar los siguientes modulos:
+Hay que activar los siguientes modulos:
 
 - Compras
 - Ventas
 - Inventario
-- Contabilidad
 - CRM
 - Empleados
 
