@@ -12,7 +12,7 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 
 > [!NOTE]
 > Este comando es para la versión 2.0 del script docker-compose
-
+> Este es el comando que deberemos usar para levantar el contenedor cada vez que queramos usarlo.
 ```sh
 docker compose up --build
 ```
