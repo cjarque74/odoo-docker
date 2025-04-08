@@ -35,7 +35,9 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 > [!IMPORTANT]
 > CJG son las iniciales de TU nombre y apellidos
 
-- Url `http://localhost:8069` --- `http://localhost:8070`
+De acuerdo al entorno Odoo que te indiquen debes usar una URL:
+- Url: `http://localhost:8070` --- Pruebas
+       `http://localhost:8069` --- Actividades
 - Master Password: `IFP123`
 - Nombre base de datos: `edu-CJG-UF2`
 - Password: `IFP123`
