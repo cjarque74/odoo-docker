@@ -1,15 +1,30 @@
 services:
-  web:
-    image: odoo:latest
+  web_a:
+    image: odoo:17
     depends_on:
       db:
         condition: service_healthy
     ports:
       - "8069:8069"
     volumes:
-      - odoo-web-data:/var/lib/odoo
-      - ./config:/etc/odoo
-      - ./addons:/mnt/extra-addons
+      - odoo-web-a-data:/var/lib/odoo
+    environment:
+      - HOST=db
+      - USER=openpg
+      - PASSWORD=openpgpwd
+    networks:
+      - odoo-network
+    restart: unless-stopped
+
+  web_b:
+    image: odoo:17
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "8070:8069"
+    volumes:
+      - odoo-web-b-data:/var/lib/odoo
     environment:
       - HOST=db
       - USER=openpg
@@ -20,6 +35,7 @@ services:
 
   db:
     image: postgres:15
+    user: "0:0"
     ports:
       - "5432:5432"
     environment:
@@ -32,14 +48,14 @@ services:
     networks:
       - odoo-network
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U odoo -d postgres"]
+      test: ["CMD-SHELL", "pg_isready -U openpg -d postgres"]
       interval: 5s
       timeout: 5s
       retries: 5
     restart: unless-stopped
 
   pgadmin:
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:9.0.0
     depends_on:
       - db
     ports:
@@ -54,7 +70,8 @@ services:
     restart: unless-stopped
 
 volumes:
-  odoo-web-data:
+  odoo-web-a-data:
+  odoo-web-b-data:
   odoo-db-data:
   pgadmin-data:
 

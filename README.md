@@ -15,9 +15,9 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 
 > [!IMPORTANT]
 > Este es el comando que deberemos usar para levantar el contenedor cada vez que queramos usarlo.
-```sh
-docker compose up --build
-```
+>```sh
+>docker compose up --build
+>```
 
 ## Pgadmin
 
@@ -51,5 +51,9 @@ Hay que activar los siguientes modulos:
 - CRM
 - Empleados
 
-
+> [!NOTE]
+> Para levantar el entorno de nuevo utiliza este comando
+>```sh
+>docker compose up
+>```
 
