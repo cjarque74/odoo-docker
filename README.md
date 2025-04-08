@@ -35,7 +35,7 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 > [!IMPORTANT]
 > CJG son las iniciales de TU nombre y apellidos
 
-- Url `http://localhost:8069`
+- Url `http://localhost:8069` --- `http://localhost:8070`
 - Master Password: `IFP123`
 - Nombre base de datos: `edu-CJG-UF2`
 - Password: `IFP123`
