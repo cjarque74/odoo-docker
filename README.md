@@ -13,11 +13,44 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 > [!NOTE]
 > Este comando es para la versión 2.0 del script docker-compose
 
-> [!IMPORTANT]
-> Este es el comando que deberemos usar para levantar el contenedor cada vez que queramos usarlo.
+> [!NOTE]
+>Antes de levantar el nuevo entorno ejecuta este comando para eliminar instalaciones previas
+>```sh
+>docker compose down -v
+>```
+> Una vez eliminados, para levantar el entorno de nuevo utiliza este comando
 >```sh
 >docker compose up --build
 >```
+
+## Odoo
+
+> [!IMPORTANT]
+> CJG son las iniciales de TU nombre y apellidos
+
+De acuerdo al entorno Odoo que te indiquen debes usar una URL:
+- Url: `http://localhost:8070` --- Actividad Final
+- Master Password: `IFP123`
+- Nombre base de datos: `Final_CJG` donde CJG son tus iniciales
+- Password: `IFP123`
+> [!IMPORTANT] 
+> SELECCIONAR DEMO DATA
+
+- Url: `http://localhost:8069` --- Examen
+- Master Password: `IFP123`
+- Nombre base de datos: `Examen_CJG` donde CJG son tus iniciales
+- Password: `IFP123`
+
+> [!IMPORTANT] 
+> SELECCIONAR DEMO DATA
+
+Hay que activar los siguientes modulos en el mismo orden:
+
+- Compras
+- Ventas
+- Inventario
+- CRM
+- Empleados
 
 ## Pgadmin
 
@@ -26,36 +59,20 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 - Password `admin`
 
 > [!IMPORTANT]
-> Al añadir una conexión se tiene que ver así:
+> Al añadir una conexión según las siguientes instrucciones:
 
-<img src="./Servidor.png">
+<img src="./Servidor1.png">
+<img src="./Servidor2.png">
+<img src="./Servidor3.png">
 
-## Odoo
+>El resultado esperado es el siguiente:
+<img src="./resultado.png">
+
+
 
 > [!IMPORTANT]
-> CJG son las iniciales de TU nombre y apellidos
-
-De acuerdo al entorno Odoo que te indiquen debes usar una URL:
-- Url: `http://localhost:8070` --- Pruebas
-       `http://localhost:8069` --- Actividades
-- Master Password: `IFP123`
-- Nombre base de datos: `edu-CJG-UF2`
-- Password: `IFP123`
-
-> [!IMPORTANT] 
-> NO SELECCIONAR DEMO DATA
-
-Hay que activar los siguientes modulos:
-
-- Compras
-- Ventas
-- Inventario
-- CRM
-- Empleados
-
-> [!NOTE]
-> Para levantar el entorno de nuevo utiliza este comando
+> Este es el comando que deberemos usar para levantar el contenedor cada vez que queramos usarlo.
 >```sh
->docker compose up
+>docker compose up --build
 >```
 
