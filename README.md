@@ -62,10 +62,9 @@ Hay que activar los siguientes modulos en el mismo orden:
 > Al añadir una conexión según las siguientes instrucciones:
 
 <img src="./Servidor1.png">
-
->Contraseña: openpgpwd
-
 <img src="./Servidor2.png">
+>Usuario: openpg
+>Contraseña: openpgpwd
 <img src="./Servidor3.png">
 
 >El resultado esperado es el siguiente:
