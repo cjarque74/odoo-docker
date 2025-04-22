@@ -62,6 +62,9 @@ Hay que activar los siguientes modulos en el mismo orden:
 > Al añadir una conexión según las siguientes instrucciones:
 
 <img src="./Servidor1.png">
+>```sh
+>Contraseña: openpgpwd
+>```
 <img src="./Servidor2.png">
 <img src="./Servidor3.png">
 
