@@ -18,7 +18,7 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 >```sh
 >docker compose down -v
 >```
-> Una vez eliminados, para levantar el entorno de nuevo utiliza este comando
+> Una vez eliminados, y después de haber clonado el nuevo reposotorio, para levantar el entorno de nuevo utiliza este comando
 >```sh
 >docker compose up --build
 >```
