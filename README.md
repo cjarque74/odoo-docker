@@ -63,8 +63,10 @@ Hay que activar los siguientes modulos en el mismo orden:
 
 <img src="./Servidor1.png">
 <img src="./Servidor2.png">
->Usuario: openpg
->Contraseña: openpgpwd
+
+- Usuario: openpg
+- Contraseña: openpgpwd
+
 <img src="./Servidor3.png">
 
 >El resultado esperado es el siguiente:
