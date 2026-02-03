@@ -29,14 +29,15 @@ Una vez realizados estos pasos, al clonar el repositorio abrir un terminal en es
 > CJG son las iniciales de TU nombre y apellidos
 
 De acuerdo al entorno Odoo que te indiquen debes usar una URL:
-- Url: `http://localhost:8070` --- Actividad Final
+
+- Url: `http://localhost:8069` --- Actividad Final
 - Master Password: `IFP123`
 - Nombre base de datos: `Final_CJG` donde CJG son tus iniciales
 - Password: `IFP123`
 > [!IMPORTANT] 
 > SELECCIONAR DEMO DATA
 
-- Url: `http://localhost:8069` --- Examen
+- Url: `http://localhost:8070` --- Examen
 - Master Password: `IFP123`
 - Nombre base de datos: `Examen_CJG` donde CJG son tus iniciales
 - Password: `IFP123`
