@@ -68,7 +68,7 @@ Hay que activar los siguientes modulos en el mismo orden:
 - Usuario: openpg
 - Contraseña: openpgpwd
 
-<img src="./Servidor3.png">
+<img src="./Servidor3a.png">
 
 >El resultado esperado es el siguiente:
 <img src="./resultado.png">
